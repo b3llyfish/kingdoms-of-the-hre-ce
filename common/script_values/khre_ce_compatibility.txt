@@ -1,0 +1,79 @@
+﻿kingdom_wendia_county_count = {
+	value = 0
+	every_sub_realm_county = {
+		limit = {
+			title_province = { geographical_region = custom_khre_wendia }
+		}
+		add = 1
+	}
+}
+
+kingdom_wendia_required_county_total = {
+	value = 0
+	every_county_in_region  = {
+		region = custom_khre_wendia
+		add = 1
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
+}
+
+kingdom_franconia_county_count = {
+	value = 0
+	every_sub_realm_county = {
+		limit = {
+			title_province = { geographical_region = custom_khre_franconia }
+		}
+		add = 1
+	}
+}
+
+kingdom_franconia_required_county_total = {
+	value = 0
+	every_county_in_region  = {
+		region = custom_khre_franconia
+		add = 1
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
+}
+
+kingdom_swabia_county_count = {
+	value = 0
+	every_sub_realm_county = {
+		limit = {
+			title_province = { geographical_region = custom_khre_swabia }
+		}
+		add = 1
+	}
+}
+
+kingdom_swabia_required_county_total = {
+	value = 0
+	every_county_in_region  = {
+		region = custom_khre_swabia
+		add = 1
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
+}
+
+kingdom_frisia_unformed_county_count = {
+	value = 0
+	every_sub_realm_county = {
+		limit = {
+			title_province = { geographical_region = custom_khre_frisia }
+		}
+		add = 1
+	}
+}
+
+kingdom_frisia_unformed_required_county_total = {
+	value = 0
+	every_county_in_region  = {
+		region = custom_khre_frisia
+		add = 1
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
+}

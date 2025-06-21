@@ -1,0 +1,79 @@
+﻿restore_saxony_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	ai_check_interval = 0
+	is_shown = {
+		always = no
+	}
+	
+	effect = {
+		trigger_event = {
+			id = DE_decision_event.0002 #NEED TO MAKE
+		}
+	}
+}
+
+form_grand_duchy_saxony_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	ai_check_interval = 0
+	is_shown = {
+		always = no
+	}
+	
+	effect = {
+		trigger_event = {
+			id = DE_decision_event.0003 #NEED TO MAKE
+		}
+	}
+}
+
+form_grand_duchy_franconia_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	ai_check_interval = 0
+	is_shown = {
+		always = no
+	}
+	
+	effect = {
+		trigger_event = {
+			id = DE_decision_event.0004 #NEED TO MAKE
+		}
+	}
+}
+
+form_grand_duchy_swabia_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	ai_check_interval = 0
+	is_shown = {
+		always = no
+	}
+	
+	effect = {
+		trigger_event = {
+			id = DE_decision_event.0005 #NEED TO MAKE
+		}
+	}
+}
+
+restore_frisia_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	ai_check_interval = 0
+	is_shown = {
+		always = no
+	}
+	
+	effect = {
+		trigger_event = {
+			id = DE_decision_event.0011
+		}
+	}
+}

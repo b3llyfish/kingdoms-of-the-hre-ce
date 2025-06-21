@@ -1,0 +1,203 @@
+﻿# triggers to be overwritten by CE compatibility mod
+
+show_slavinia = {
+	always = no
+}
+
+can_choose_wendia = {
+	show_wendia = yes
+	custom_tooltip = {
+		text = kingdom_already_exists
+		NOT = { exists = title:k_wendia.holder }
+	}
+	$CHARACTER$ = {
+		custom_tooltip = {
+			text = not_enough_wendia_counties
+			controls_enough_of_region = {
+				CHARACTER = root
+				TARGET_REGION = custom_khre_wendia
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_capital_region_required
+			}
+			capital_province = {
+				geographical_region = custom_khre_wendia
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_culture_required
+			}
+			custom_tooltip = {
+				text = require_wendia_culture
+				culture = {
+					has_cultural_pillar = heritage_west_slavic
+				}
+			}
+		}
+	}
+}
+
+show_wendia = {
+	always = yes
+}
+
+can_choose_franconia = {
+	show_franconia = yes
+	custom_tooltip = {
+		text = kingdom_already_exists
+		NOT = { exists = title:k_grand_franconia.holder }
+	}
+	$CHARACTER$ = {
+		custom_tooltip = {
+			text = not_enough_franconia_counties
+			controls_enough_of_region = {
+				CHARACTER = root
+				TARGET_REGION = custom_khre_franconia
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_capital_region_required
+			}
+			capital_province = {
+				geographical_region = custom_khre_franconia
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_culture_required
+			}
+			custom_tooltip = {
+				text = require_franconia_culture
+				culture = {
+					is_culture_or_is_descendant_culture_of = {
+						TARGET_CULTURE = culture:franconian
+					}
+				}
+			}
+		}
+	}
+}
+
+show_franconia = {
+	always = yes
+}
+
+can_choose_swabia = {
+	show_swabia = yes
+	custom_tooltip = {
+		text = kingdom_already_exists
+		NOT = { exists = title:k_grand_swabia.holder }
+	}
+	$CHARACTER$ = {
+		custom_tooltip = {
+			text = not_enough_swabia_counties
+			controls_enough_of_region = {
+				CHARACTER = root
+				TARGET_REGION = custom_khre_swabia
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_capital_region_required
+			}
+			capital_province = {
+				geographical_region = custom_khre_swabia
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_culture_required
+			}
+			custom_tooltip = {
+				text = require_swabia_culture
+				culture = {
+					is_culture_or_is_descendant_culture_of = {
+						TARGET_CULTURE = culture:swabian
+					}
+				}
+			}
+		}
+	}
+}
+
+show_swabia = {
+	always = yes
+}
+
+show_frisia = {
+	trigger_if = {
+		limit = {
+			game_start_date = 1178.10.1
+		}
+		always = yes
+	}
+	trigger_else = {
+		always = no
+	}
+}
+
+show_frisia_unformed = {
+	trigger_if = {
+		limit = {
+			OR = {
+				game_start_date = 867.1.1
+				game_start_date = 1066.9.15
+			}
+		}
+		always = yes
+	}
+	trigger_else = {
+		always = no
+	}
+}
+
+can_choose_frisia = {
+	custom_tooltip = {
+		text = kingdom_already_exists
+		NOT = { exists = title:k_frisia.holder }
+	}
+	$CHARACTER$ = {
+		trigger_if = {
+			limit = {
+				show_frisia = yes
+			}
+			custom_tooltip = {
+				text = not_enough_frisia_counties
+				controls_enough_of_kingdom = {
+					CHARACTER = root
+					TARGET_KINGDOM = title:k_frisia
+				}
+			}
+		}
+		trigger_if = {
+			limit = {
+				show_frisia_unformed = yes
+			}
+			custom_tooltip = {
+				text = not_enough_frisia_unformed_counties
+				controls_enough_of_region = {
+					CHARACTER = root
+					TARGET_REGION = custom_khre_frisia
+				}
+			}
+		}
+	
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_culture_required
+			}
+			custom_tooltip = {
+				text = require_frisia_culture
+				culture = {
+					is_culture_or_is_descendant_culture_of = {
+						TARGET_CULTURE = culture:frisian
+					}
+				}
+			}
+		}
+	}
+}

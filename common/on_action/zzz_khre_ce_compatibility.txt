@@ -1,0 +1,67 @@
+﻿on_game_start = {
+	on_actions = {
+		khre_ce_compatibility_fixes
+	}
+}
+
+khre_ce_compatibility_fixes = {
+	effect = {
+		title:k_slavinia = { set_de_jure_liege_title = title:e_bin }
+		if = {
+			limit = {
+				game_start_date = 867.1.1
+			}
+			# setup western slavs
+			title:k_pomerania = { set_de_jure_liege_title = title:e_west_slavia }
+			title:k_sorbia = { set_de_jure_liege_title = title:e_west_slavia }
+			title:d_ostmark = {
+				set_de_jure_liege_title = title:k_sorbia
+			}
+			title:d_nordmark = {
+				set_de_jure_liege_title = title:k_sorbia
+			}
+			# setup italy
+			title:k_italy = { set_de_jure_liege_title = title:e_france }
+			# setup holland
+			title:d_utrecht = { set_de_jure_liege_title = title:k_lotharingia }
+			title:d_holland = { set_de_jure_liege_title = title:k_lotharingia }
+			title:d_gelre = { set_de_jure_liege_title = title:k_lotharingia }
+			title:d_frisia = { set_de_jure_liege_title = title:k_lotharingia }
+		}
+		else_if = {
+			limit = {
+				game_start_date = 1066.9.15
+			}
+			# setup western slavs
+			title:k_pomerania = { set_de_jure_liege_title = title:e_west_slavia }
+			title:k_wendia = { set_de_jure_liege_title = title:e_west_slavia }
+			title:d_ostmark = {
+				set_de_jure_liege_title = title:k_wendia
+			}
+			title:d_nordmark = {
+				set_de_jure_liege_title = title:k_wendia
+			}
+			# setup italy
+			title:k_italy = { set_de_jure_liege_title = title:e_hre }
+			# setup holland
+			title:d_utrecht = { set_de_jure_liege_title = title:k_lotharingia }
+			title:d_holland = { set_de_jure_liege_title = title:k_lotharingia }
+			title:d_gelre = { set_de_jure_liege_title = title:k_lotharingia }
+			title:d_frisia = { set_de_jure_liege_title = title:k_lotharingia }
+		}
+		else = {
+			# 1178 start date
+			# setup western slavs
+			title:k_pomerania = { set_de_jure_liege_title = title:e_west_slavia }
+			title:k_wendia = { set_de_jure_liege_title = title:e_west_slavia }
+			title:d_ostmark = {
+				set_de_jure_liege_title = title:k_wendia
+			}
+			title:d_nordmark = {
+				set_de_jure_liege_title = title:k_wendia
+			}
+			# setup italy
+			title:k_italy = { set_de_jure_liege_title = title:e_italy }
+		}
+	}
+}

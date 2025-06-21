@@ -1,0 +1,85 @@
+﻿k_wendia = {
+	color = { 175 50 70 }
+	
+	capital = c_brandenburg
+	
+	can_create = {
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			NOT = {
+				has_title = title:e_hre
+			}
+		}
+		custom_tooltip = {
+			text = hre_cannot_create_kingdom
+			is_not_hre_vassal = {
+				CHARACTER = root
+			}
+		}
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			OR = {
+				culture = culture:polabian
+				culture = culture:obotrite
+				culture = culture:ranian
+				culture = culture:lutician
+				culture = culture:sorbian
+			}
+		}
+	}
+}
+
+k_grand_franconia = {
+	color = { 255 255 255 }
+	
+	capital = c_wurzburg
+	
+	can_create = {
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			NOT = {
+				has_title = title:e_hre
+			}
+		}
+		custom_tooltip = {
+			text = hre_cannot_create_kingdom
+			is_not_hre_vassal = {
+				CHARACTER = root
+			}
+		}
+	}
+}
+
+
+k_grand_swabia = {
+	color = { 210 210 210 }
+	
+	capital = c_ulm
+	
+	can_create = {
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			NOT = {
+				has_title = title:e_hre
+			}
+		}
+		custom_tooltip = {
+			text = hre_cannot_create_kingdom
+			is_not_hre_vassal = {
+				CHARACTER = root
+			}
+		}
+	}
+}
+
+e_bin = {
+
+}

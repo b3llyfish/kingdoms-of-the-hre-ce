@@ -1,0 +1,75 @@
+﻿# effects to be overwritten by CE compatibility mod
+
+create_franconia_title = {
+	$OWNER$ = {
+		title:d_west_franconia = { set_de_jure_liege_title = title:k_grand_franconia }
+		title:d_east_franconia = { set_de_jure_liege_title = title:k_grand_franconia }
+		title:d_hesse = { set_de_jure_liege_title = title:k_grand_franconia }
+		
+		title:k_grand_franconia = { set_de_jure_liege_title = title:e_hre }
+	}
+}
+
+create_swabia_title = {
+	$OWNER$ = {
+		title:d_alsace = { set_de_jure_liege_title = title:k_grand_swabia }
+		title:d_swabia = { set_de_jure_liege_title = title:k_grand_swabia }
+		title:d_augsburg = { set_de_jure_liege_title = title:k_grand_swabia }
+		
+		title:k_grand_swabia = { set_de_jure_liege_title = title:e_hre }
+		
+		# if Bavarian king exists form a rivalry and worsen their opinion of the Emperor
+		if = {
+			limit = {
+				exists = title:k_bavaria.holder
+			}
+			set_relation_rival = {
+				target = title:k_bavaria.holder
+				reason = divided_kingdom
+			}
+			title:k_bavaria.holder = {
+				add_opinion = {
+					target = title:e_hre.holder
+					modifier = broke_apart_my_kingdom
+				}
+			}
+		}
+	}
+}
+
+create_frisia_title = {
+	if = {
+		limit = {
+			# already exists in 1178
+			OR = {
+				game_start_date = 867.1.1
+				game_start_date = 1066.9.15
+			}
+		}
+		$OWNER$ = {
+			title:d_utrecht = { set_de_jure_liege_title = title:k_frisia }
+			title:d_holland = { set_de_jure_liege_title = title:k_frisia }
+			title:d_gelre = { set_de_jure_liege_title = title:k_frisia }
+			title:d_frisia = { set_de_jure_liege_title = title:k_frisia }
+			
+			title:k_frisia = { set_de_jure_liege_title = title:e_hre }
+			
+			# if Lotharingia king exists form a rivalry and worsen their opinion of the Emperor
+			if = {
+				limit = {
+					exists = title:k_lotharingia.holder
+				}
+				set_relation_rival = {
+					target = title:k_lotharingia.holder
+					reason = divided_kingdom
+				}
+				title:k_lotharingia.holder = {
+					add_opinion = {
+						target = title:e_hre.holder
+						modifier = broke_apart_my_kingdom
+					}
+				}
+			}
+		}
+	}
+}
