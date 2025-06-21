@@ -1,0 +1,15 @@
+﻿l_french:
+ choose_wendia_tooltip: "Petition for the Principality of [GetTitleByKey('k_wendia').GetNameNoTier]\n\nThe Principality of [GetTitleByKey('k_wendia').GetNameNoTierNoTooltip] will be formed with the [GetTitleByKey('d_nordmark').GetName] and the [GetTitleByKey('d_ostmark').GetName] as de jure duchies." #NT!
+ not_enough_wendia_counties: "[SCOPE.ScriptValue('kingdom_wendia_required_county_total')|0] [counties|E] within the region of [GetGeographicalRegion('custom_khre_wendia').GetName] are required to petition for this title. You currently have [SCOPE.ScriptValue('kingdom_wendia_county_count')|0]." #NT!
+ require_wendia_culture: "Culture must have West Slavic heritage" #NT!
+  
+ choose_franconia_tooltip: "Petition for the Principality of [GetTitleByKey('k_grand_franconia').GetNameNoTier]\n\nThe Principality of [GetTitleByKey('k_grand_franconia').GetNameNoTierNoTooltip] will be formed with the [GetTitleByKey('d_east_franconia').GetName], [GetTitleByKey('d_west_franconia').GetName] and the [GetTitleByKey('d_hesse').GetName] as de jure duchies." #NT!
+ not_enough_franconia_counties: "[SCOPE.ScriptValue('kingdom_franconia_required_county_total')|0] [counties|E] within the region of [GetGeographicalRegion('custom_khre_franconia').GetName] are required to petition for this title. You currently have [SCOPE.ScriptValue('kingdom_franconia_county_count')|0]." #NT!
+ require_franconia_culture: "Culture must be Franconian or derived from it" #NT!
+  
+ choose_swabia_tooltip: "Petition for the Principality of [GetTitleByKey('k_grand_swabia').GetNameNoTier]\n\nThe Principality of [GetTitleByKey('k_grand_swabia').GetNameNoTierNoTooltip] will be formed with the [GetTitleByKey('d_alsace').GetName], [GetTitleByKey('d_augsburg').GetName] and the [GetTitleByKey('d_swabia').GetName] as de jure duchies." #NT!
+ not_enough_swabia_counties: "[SCOPE.ScriptValue('kingdom_swabia_required_county_total')|0] [counties|E] within the region of [GetGeographicalRegion('custom_khre_swabia').GetName] are required to petition for this title. You currently have [SCOPE.ScriptValue('kingdom_swabia_county_count')|0]." #NT!
+ require_swabia_culture: "Culture must be Swabian or derived from it" #NT!
+  
+ choose_frisia_unformed_tooltip: "Petition for the Principality of [GetTitleByKey('k_frisia').GetNameNoTier]\n\nThe Principality of [GetTitleByKey('k_frisia').GetNameNoTierNoTooltip] will be formed with the [GetTitleByKey('d_frisia').GetName], the [GetTitleByKey('d_gelre').GetName], the [GetTitleByKey('d_holland').GetName] and the [GetTitleByKey('d_utrecht').GetName] as de jure duchies." #NT!
+ not_enough_frisia_unformed_counties: "[SCOPE.ScriptValue('kingdom_frisia_unformed_required_county_total')|0] [counties|E] within the region of [GetGeographicalRegion('custom_khre_frisia').GetName] are required to petition for this title. You currently have [SCOPE.ScriptValue('kingdom_frisia_unformed_county_count')|0]." #NT!
