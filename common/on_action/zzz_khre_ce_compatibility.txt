@@ -1,4 +1,4 @@
-﻿on_game_start = {
+on_game_start = {
 	on_actions = {
 		khre_ce_compatibility_fixes
 	}
@@ -6,7 +6,6 @@
 
 khre_ce_compatibility_fixes = {
 	effect = {
-		title:k_slavinia = { set_de_jure_liege_title = title:e_bin }
 		if = {
 			limit = {
 				game_start_date = 867.1.1

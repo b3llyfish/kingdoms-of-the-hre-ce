@@ -201,3 +201,14 @@ can_choose_frisia = {
 		}
 	}
 }
+
+diverges_to_unique_culture_burgundy = {
+	AND = {
+		has_primary_title = title:k_burgundy
+		capital_county = {
+			title:d_provence = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+	}
+}

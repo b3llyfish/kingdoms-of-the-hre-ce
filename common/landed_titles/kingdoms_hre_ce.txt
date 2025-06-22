@@ -1,4 +1,4 @@
-﻿k_wendia = {
+k_wendia = {
 	color = { 175 50 70 }
 	
 	capital = c_brandenburg
@@ -78,8 +78,4 @@ k_grand_swabia = {
 			}
 		}
 	}
-}
-
-e_bin = {
-
 }
