@@ -1,6 +1,11 @@
 ﻿[h1]Kingdoms of the HRE + Culture Expanded Compatibility Mod[/h1]
 Compatibility mod that combines the Emperor petition decision with Culture Expanded's kingdom changes.
 
+[h2]Mod Status[/h2]
+This mod is considered complete. I will do my best to ensure compatibility with game version updates.
+
+[b]Please note[/b] that I currently have no intention of buying future CK3 DLCs. If a future DLC breaks this mod I will not be able to fix it.
+
 [h2]Load Order[/h2]
 * Kingdoms of the HRE
 * Culture Expanded
@@ -9,8 +14,7 @@ Compatibility mod that combines the Emperor petition decision with Culture Expan
 [h2]Key Details[/h2]
 
 [b]Culture Expanded De Jure Changes[/b]
-Kingdoms within the HRE's influence will now use the De Jure setup defined by Culture Expanded whilst still being
-uncreatable for HRE vassals.
+Kingdoms within the HRE's influence will now use the De Jure setup defined by Culture Expanded whilst still being uncreatable for HRE vassals.
 
 [b]Kingdoms[/b]
 The following Culture Expanded Kingdoms have been added to the petition list:

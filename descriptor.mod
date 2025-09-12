@@ -3,4 +3,5 @@ tags={
 	"Utilities"
 }
 name="Kingdoms of the HRE + CE Compatibility Patch"
-supported_version="1.16.2.3"
+supported_version="1.17.*"
+remote_file_id="3504921484"
